@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+h4{
+    color: white;
+}
+
+h4:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+p{
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card{
+    margin: 10% 40%;
+    width: 250px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0 0px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.top-img{
+    display: block;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.eth-img {
+    position: relative;
+    margin: 0; /* Remove default margin */
+    padding: 0;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    opacity: 0; /* Initially hide the overlay */
+    background: rgba(0,255,247,0.5) ; 
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+    cursor: pointer;
+  }
+
+  .eth-img:hover .overlay {
+    opacity: 1; /* Show the overlay on hover */
+    background-image: url('images/icon-view.svg'); /* Add the overlay image */
+    background-size: 48px 48px; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; 
+  }
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.eth-icon{
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+}
+
+.clk-icon{
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    margin-right: 5px;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.avatar{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width: 380px) {
+    .card{
+        margin: 50px auto;
+    }
+}
